@@ -4,9 +4,12 @@ namespace GB_lesn01v3
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            //Запрос ввода имени
+            string nameUsr = Console.ReadLine();
+            //Вывод приветствия
+            Console.WriteLine("Привет, " + nameUsr +", сегодня " + DateTime.Now.ToShortDateString());
         }
     }
 }
